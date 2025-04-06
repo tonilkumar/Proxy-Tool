@@ -40,7 +40,7 @@ sudo apt install arp-scan dsniff mitmproxy net-tools gnome-terminal
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/arp-mitm-proxy.git
+   git clone [https://github.com/tonilkumar/Proxy-Tool.git]
    cd arp-mitm-proxy
    ```
 
