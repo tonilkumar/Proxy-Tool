@@ -20,6 +20,9 @@ A powerful bash-based tool to scan, spoof, and transparently proxy HTTP traffic 
 - ♻️ Graceful cleanup (Ctrl+C handler)
 - 🔧 Optional multi-terminal spoofing sessions
 - 📦 Lightweight, pure Bash script — no Python needed (except for mitmproxy)
+- 🚦 Auto check for missing dependencies with guided messages
+- 🛡️ Fail-safe ARP spoofing with background fallback when GUI terminal is not available
+- 📺 Banner with project name and credits
 
 ---
 
@@ -31,6 +34,13 @@ A powerful bash-based tool to scan, spoof, and transparently proxy HTTP traffic 
 sudo apt update
 sudo apt install arp-scan dsniff mitmproxy net-tools gnome-terminal
 ```
+
+Or use the auto installer:
+```bash
+chmod +x install.sh
+sudo ./install.sh
+```
+
 ---
 
 ## ⚙️ Requirements
@@ -42,7 +52,6 @@ sudo apt install arp-scan dsniff mitmproxy net-tools gnome-terminal
 - `iptables`
 - Optional: `gnome-terminal` or `konsole` for GUI terminal popups
 
----
 > ⚠️ Tested on Debian/Ubuntu. Adapt `gnome-terminal` if using another desktop environment.
 
 ---
@@ -82,8 +91,11 @@ sudo apt install arp-scan dsniff mitmproxy net-tools gnome-terminal
 ```
 arp-mitm-proxy/
 ├── advanced_arp_spoof.sh      # Main Bash script
+├── install.sh                 # Optional setup helper
 ├── mitmproxy.log              # Auto-generated mitmproxy logs
-└── README.md                  # This file
+├── .gitignore                 # Git ignore file
+├── LICENSE                    # MIT License
+└── README.md                  # Project documentation
 ```
 
 ---
@@ -104,6 +116,7 @@ CEO @ Inovwave Technologies
 Bug Bounty Hunter | Ethical Hacker | Embedded Dev
 
 ---
+
 
 ## 🌟 Star the Repo
 
