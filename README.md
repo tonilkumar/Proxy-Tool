@@ -31,7 +31,18 @@ A powerful bash-based tool to scan, spoof, and transparently proxy HTTP traffic 
 sudo apt update
 sudo apt install arp-scan dsniff mitmproxy net-tools gnome-terminal
 ```
+---
 
+## ⚙️ Requirements
+
+- `bash`
+- `arpspoof` (from dsniff)
+- `arp-scan`
+- `mitmproxy`
+- `iptables`
+- Optional: `gnome-terminal` or `konsole` for GUI terminal popups
+
+---
 > ⚠️ Tested on Debian/Ubuntu. Adapt `gnome-terminal` if using another desktop environment.
 
 ---
