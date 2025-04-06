@@ -110,9 +110,9 @@ iptables -t nat -A PREROUTING -i "$IFACE" -p tcp --dport 80 -j REDIRECT --to-por
 
 # Start mitmproxy if enabled
 if [ "$ENABLE_PROXY" = true ]; then
-    echo "[*] Starting mitmproxy on port $PROXY_PORT..."
-    nohup mitmproxy --mode transparent --showhost -p $PROXY_PORT > "$MITMPROXY_LOG" 2>&1 &
-    echo "[+] mitmproxy logging to $MITMPROXY_LOG"
+    echo "[*] Starting mitmdump (headless) on port $PROXY_PORT..."
+    nohup mitmdump --mode transparent --showhost -p "$PROXY_PORT" > "$MITMPROXY_LOG" 2>&1 &
+    echo "[+] mitmdump logging to $MITMPROXY_LOG"
 fi
 
 # Scan network for live hosts
