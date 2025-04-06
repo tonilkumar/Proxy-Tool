@@ -6,7 +6,7 @@ A powerful bash-based tool to scan, spoof, and transparently proxy HTTP traffic 
 
 ![MITM](https://img.shields.io/badge/MITM-Ready-green?style=flat-square)
 ![Bash Script](https://img.shields.io/badge/Shell-Bash-blue?style=flat-square)
-![License](https://img.shields.io/github/license/your-username/arp-mitm-proxy?style=flat-square)
+![License](https://img.shields.io/github/license/tonilkumar/arp-mitm-proxy?style=flat-square)
 
 ---
 
